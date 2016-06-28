@@ -7,7 +7,7 @@
     colors="true"
     bootstrap="bootstrap.php"
 >
-    <testsuite name="calculadora">
+    <testsuite name="todo">
         <directory>tests</directory>
     </testsuite>
 </phpunit>
