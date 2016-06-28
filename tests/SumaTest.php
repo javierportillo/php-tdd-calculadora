@@ -14,6 +14,6 @@ class SumaTest extends TestCase
      */
     public function testSumaTiraExcepcionConValoresNoNumericos()
     {
-        $this->suma->calcular(falso, 'test');
+        $this->suma->calcular(false, 'test');
     }
 }
