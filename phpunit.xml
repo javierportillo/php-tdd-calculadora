@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    verbose="true"
+    colors="true"
+    bootstrap="bootstrap.php"
+>
+    <testsuite name="calculadora">
+        <directory>tests</directory>
+    </testsuite>
+</phpunit>
