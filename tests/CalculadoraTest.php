@@ -2,8 +2,6 @@
 
 use PHPUnit\Framework\TestCase;
 
-// require '/home/javier/Proyectos/php-tdd-calculadora/calculadora/Calculadora.php';
-
 class CalculadoraTest extends TestCase
 {
     public function setUp()
