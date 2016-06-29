@@ -16,4 +16,12 @@ class SumaTest extends TestCase
     {
         $this->suma->calcular(false, 'test');
     }
+
+    /**
+     * @expectedException BadMethodCallException
+     */
+    public function testSumaTiraExcepcionAlFaltarArgumentos()
+    {
+        $this->suma->calcular();
+    }
 }
