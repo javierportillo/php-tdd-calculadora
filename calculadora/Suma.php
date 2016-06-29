@@ -2,17 +2,17 @@
 
 class Suma
 {
-    public function calcular($sumandoA = null, $sumandoB = null)
+    public function calcular($operando1 = null, $operando2 = null)
     {
-        if (isset($sumandoA) !== true || isset($sumandoB) !== true) {
+        if (isset($operando1) !== true || isset($operando2) !== true) {
             throw new BadMethodCallException("Suma espera dos argumentos con valores numéricos");
 
         }
 
-        if (is_numeric($sumandoA) !== true || is_numeric($sumandoB) !== true) {
+        if (is_numeric($operando1) !== true || is_numeric($operando2) !== true) {
             throw new InvalidArgumentException("Suma espera dos argumentos con valores numéricos");
         }
 
-        return $sumandoA + $sumandoB;
+        return $operando1 + $operando2;
     }
 }
