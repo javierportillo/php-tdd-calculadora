@@ -1,6 +1,6 @@
 <?php
 
-class Suma
+class Suma implements InterfazOperacion
 {
     public function calcular($operando1 = null, $operando2 = null)
     {
