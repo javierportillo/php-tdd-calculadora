@@ -9,6 +9,7 @@ class OperacionTest extends TestCase
         return [
             [new Suma],
             [new Resta],
+            [new Multiplicacion],
         ];
     }
 

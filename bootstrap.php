@@ -8,3 +8,4 @@ require APP_ROOT . '/calculadora/Calculadora.php';
 require APP_ROOT . '/calculadora/Operacion.php';
 require APP_ROOT . '/calculadora/Suma.php';
 require APP_ROOT . '/calculadora/Resta.php';
+require APP_ROOT . '/calculadora/Multiplicacion.php';
