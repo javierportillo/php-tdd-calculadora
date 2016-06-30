@@ -10,22 +10,6 @@ class RestaTest extends TestCase
     }
 
     /**
-     * @expectedException InvalidArgumentException
-     */
-    public function testRestaTiraExcepcionConValoresNoNumericos()
-    {
-        $this->resta->calcular(false, 'test');
-    }
-
-    /**
-     * @expectedException BadMethodCallException
-     */
-    public function testRestaTiraExcepcionAlFaltarArgumentos()
-    {
-        $this->resta->calcular();
-    }
-
-    /**
      * @dataProvider restaDataProvider
      */
     public function testRestaPuedeRestarDosNumeros($a, $b, $resultado)    {

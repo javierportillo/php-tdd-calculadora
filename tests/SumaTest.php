@@ -10,22 +10,6 @@ class SumaTest extends TestCase
     }
 
     /**
-     * @expectedException InvalidArgumentException
-     */
-    public function testSumaTiraExcepcionConValoresNoNumericos()
-    {
-        $this->suma->calcular(false, 'test');
-    }
-
-    /**
-     * @expectedException BadMethodCallException
-     */
-    public function testSumaTiraExcepcionAlFaltarArgumentos()
-    {
-        $this->suma->calcular();
-    }
-
-    /**
      * @dataProvider sumaDataProvider
      */
     public function testSumaPuedeSumarDosNumeros($a, $b, $resultado)    {
