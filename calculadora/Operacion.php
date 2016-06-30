@@ -33,5 +33,11 @@ abstract class Operacion
         return $this->operar($operando1, $operando2);
     }
 
+    /**
+     * Método abstracto donde los operadores deberán implementar su propia lógica.
+     * @param  int|float $operando1
+     * @param  int|float $operando2
+     * @return int|float El resultado.
+     */
     abstract protected function operar($operando1, $operando2);
 }
