@@ -6,7 +6,8 @@
  */
 class Calculadora
 {
-    protected $result;
+    protected $resultado = 0;
+    protected $operacion;
 
     /**
      * Obtiene el resultado de todas las operaciones.
@@ -14,8 +15,22 @@ class Calculadora
      */
     public function resultado()
     {
-        if (is_null($this->result) === true) {
-            return 0;
+        return $this->resultado;
+    }
+
+    /**
+     * Ajusta la operación con la que se realizarán los siguientes cálculos.
+     */
+    public function operacion(Operacion $operacion)
+    {
+        $this->operacion = $operacion;
+    }
+
+    public function calcular($numero)
+    {
+        $operandos = func_get_args();
+        foreach ($operandos as $operando) {
+            $this->resultado = $this->operacion->calcular($this->resultado, $operando);
         }
     }
 }
