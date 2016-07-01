@@ -26,7 +26,11 @@ class Calculadora
         $this->operacion = $operacion;
     }
 
-    public function calcular($numero)
+    /**
+     * Realiza los calculos según la operación que se haya ajustado
+     * puede recibir multiples parametros numéricos.
+     */
+    public function calcular()
     {
         $operandos = func_get_args();
         foreach ($operandos as $operando) {
